@@ -30,4 +30,8 @@ This will set up a puppetmaster for puppet development and testing.
 
 The Dashboard Enterprise Console can be accessed at [https://192.168.33.10](https://192.168.33.10).
 
+### Virtual Box guest additions
+You may want to have a look at [https://github.com/dotless-de/vagrant-vbguest](vagrant-vbguest) to fix problems relating to
+virtualbox guest additions.
+
 *Inspired by https://github.com/grahamgilbert/vagrant-puppetmaster*
