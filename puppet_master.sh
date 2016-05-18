@@ -43,11 +43,6 @@ cd ${puppet_home}
 ln -s /home/vagrant/puppet/modules
 ln -s /home/vagrant/puppet/manifests
 
-#chown -R root:pe-puppet manifests
-#chown -R root:pe-puppet modules
-chown -h root:pe-puppet manifests
-chown -h root:pe-puppet modules
-
 echo "PuppetMaster Ready for use!!"
 
 chkconfig iptables off
