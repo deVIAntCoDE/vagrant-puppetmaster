@@ -51,12 +51,6 @@ Vagrant.configure("2") do |config|
     master_config.vm.provision "file", source: "all-in-one.answers.txt", destination: "pe-answers.txt"
     master_config.vm.provision :shell, :path => "puppet_master.sh"
 
-    master_config.vm.provision "puppet_server" do |puppet|
-      puppet.puppet_server = "test-puppetmaster.localnet"
-      puppet.options = "'-t' '-d'"
-      # puppet.options = "'-t' '-v'"
-    end
-
 
     # master_config.vm.provision :shell, :path => "init_puppet.sh"
 
